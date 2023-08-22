@@ -1,0 +1,91 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta charset="utf-8" />
+    <title>SignUp</title>
+    <link rel="stylesheet" type="text/css" href="../CSS/Signupcss.css" />
+  </head>
+
+  <body>
+    <div class="maindiv">
+      <div class="signup">
+        <h1>Sign Up</h1>
+        <form
+          id="myform"
+          method="post"
+          onsubmit="return validate()"
+          action="../PHP/Signup_DB_Op.php"
+        >
+          <input
+            class="input"
+            type="text"
+            name="fname"
+            id="fname"
+            placeholder="Enter your First Name"
+          /><br />
+          <span id="fnm"> </span><br />
+
+          <input
+            class="input"
+            type="text"
+            name="sname"
+            id="sname"
+            placeholder="Enter your Second Name"
+          /><br />
+          <span id="snm"> </span><br />
+
+          <input
+            class="input"
+            type="text"
+            name="eemail"
+            id="email"
+            placeholder="Enter your Email Address"
+          /><br />
+          <span id="em"> </span><br />
+
+          <input
+            class="input"
+            type="text"
+            name="number"
+            id="number"
+            placeholder="Enter your Mobile NUmber"
+          />
+          <br />
+          <span id="num"> </span><br />
+
+          <input
+            class="input"
+            type="password"
+            name="pass"
+            id="pass"
+            placeholder="Password"
+          />
+          <br />
+          <span id="ps"> </span><br />
+
+          <input
+            class="input"
+            type="password"
+            name="cpass"
+            id="cpass"
+            placeholder="Confirm Password"
+          />
+          <br />
+          <span id="cps"> </span><br />
+
+          <button class="submit" type="submit">Sign Up</button>
+
+          <button class="reset" type="reset">Reset</button>
+
+          <a href="./Admin_Signup.html" class="admin">SignUp as Admin</a
+          ><a href="#" class="needhelp">need help ?</a>
+        </form>
+        <script
+          type="text/javascript"
+          src="../JS/signup_formvalidation.js"
+        ></script>
+      </div>
+    </div>
+  </body>
+</html>

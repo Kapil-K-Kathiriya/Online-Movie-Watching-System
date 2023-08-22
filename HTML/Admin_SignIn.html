@@ -1,0 +1,51 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta charset="utf-8" />
+    <title>Admin SignIn</title>
+    <link rel="stylesheet" type="text/css" href="../CSS/Admin_SignIn.css" />
+  </head>
+
+  <body>
+    <div class="maindiv">
+      <div class="signup">
+        <h1>Sign In <span class="small">as admin </span></h1>
+        <form
+          id="myform"
+          method="post"
+          onsubmit="return validate()"
+          action="../PHP/Admin_SignIn_Check_Op.php"
+        >
+          <input
+            class="input"
+            type="text"
+            name="email"
+            id="email"
+            placeholder="Emai Or phone"
+          /><br />
+          <span id="eml"> </span><br />
+
+          <input
+            class="input"
+            type="password"
+            name="pass"
+            id="pass"
+            placeholder="Password"
+          /><br />
+          <span id="ps"> </span><br />
+
+          <button class="submit" type="submit">Sign in</button>
+          <input type="checkbox" />
+          <label>Remember me</label>
+
+          <a href="#" class="needhelp">need help ?</a>
+        </form>
+        <script
+          type="text/javascript"
+          src="../JS/admin_signin_formvalidation.js"
+        ></script>
+      </div>
+    </div>
+  </body>
+</html>
